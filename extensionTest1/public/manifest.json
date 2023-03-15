@@ -1,0 +1,16 @@
+{ 
+    "name": "First plugin", 
+    "description": "First plugin setup",
+    "version": "1.0",
+    "manifest_version": 3,
+      "action": {
+        "default_title": "Chrome Addon v3 Starter",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"]
+      }
+    ]
+}
